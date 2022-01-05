@@ -16,13 +16,13 @@ Debes tener instalado NodeJS
 _Para la instalción primero debes clonar el repositorio, en una terminal escribe_
 
 ```
-git clone 
+git clone git@github.com:GermanAngarita/numero_primos.git
 ```
 
 _Luego entra en la carpeta que se creo_
 
 ```
-cd 
+cd numero_primos
 ```
 
 _Instala las dependencias del proyecto usando npm_

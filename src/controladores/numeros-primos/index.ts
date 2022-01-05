@@ -22,7 +22,7 @@ NumerosPrimos.get('/', async (req: Request, res: Response) => {
 })
 
 
-NumerosPrimos.get('/algoritmo', async (req: Request, res: Response) => {
+NumerosPrimos.get('/comprobacion', async (req: Request, res: Response) => {
 
     try {
         const validacion = await obtenerPrimosAlgoritmoSchema.validateAsync( req.query );
