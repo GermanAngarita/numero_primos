@@ -1,17 +1,12 @@
 
-interface IEsPrimoResponse {
-    esPrimo: boolean;
-    info: string;
-}
-
 /**
- * Devuelve si el número es primo.
+ * Return true or false if number is prime
  * @param numero
  * 
  * @returns esPrimo: Boolean => Si el número es primo true, de lo contrario false
  * 
  */
-export const esNumeroPrimo = ( numero: number ): boolean => {
+export const isPrime = ( numero: number ): boolean => {
 
     var x = Math.abs(numero);
     // 2, 3 are prime
@@ -22,4 +17,5 @@ export const esNumeroPrimo = ( numero: number ): boolean => {
     for(var i=6, I=Math.sqrt(x)+1; i<=I; i+=6)
         if(x % (i-1)===0 || x % (i+1)===0) return false;
     return true;
+
 }

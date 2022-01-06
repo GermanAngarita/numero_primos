@@ -1,7 +1,6 @@
-export default interface IRespuesta {
-    estatus: boolean;
-    resultadoOperacion: string;
+export default interface IServiceResponse {
+    status: boolean;
+    operationResult: string;
     data?: any;
     error?: any;
-    link?: string;
 }
