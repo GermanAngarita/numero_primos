@@ -27,5 +27,5 @@ app.get('/', (req: Request, res: Response) => {
 
 app.listen( variables.port, async () => {
     
-    logger.info('Servidor corriendo en: ', `${variables.domain}${variables.principalPath}`)
+    logger.info('Servidor corriendo en: ', `${variables.domain}:${variables.port}${variables.principalPath}`)
 })

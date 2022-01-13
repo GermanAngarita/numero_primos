@@ -6,9 +6,10 @@ import { getPrimesListSchema } from './numeros-primos.joi';
 const primeNumbers = Router();
 
 primeNumbers.get('/', async (req: Request, res: Response) => {
-
+    
+    const data = req.query['number'];
     try {
-        await getPrimesListSchema.validateAsync( req.query );
+        await getPrimesListSchema.validateAsync({ number: data });
         
     } catch (error) {
         return res.status(400).send({
@@ -18,7 +19,7 @@ primeNumbers.get('/', async (req: Request, res: Response) => {
         })
     }
 
-    const data = req.query['number'];
+    
 
     let result
     try {
