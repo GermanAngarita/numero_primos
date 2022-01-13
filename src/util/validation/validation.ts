@@ -26,8 +26,6 @@ export const validationParamIsPrime = ( number: any) => {
         return result;
     }
 
-    console.log('typeOf', typeof(number))
-    console.log('Number: ', Number(number))
     if ( !Number.isInteger(Number(number))) {
         result.status = false;
         result.operationResult = 'El número debe ser un entero'
